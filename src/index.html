@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
-    <title>Webpack Starter Kit</title>
+    <title>Weather</title>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
   </head>
   <body>
-    <h1>Webpack Starter Kit</h1>
-
-    <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
-
-    <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
+    <div class="app">
+      <header>
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city.."/>
+      </header>
+      <main>
+        <section class="location">
+          <div class="city">Denver, CO</div>
+          <div class="date">Monday March 30 2020</div>
+        </section>
+        <section class="current">
+          <div class="temp">15<span>°f</span></div>
+          <div class="weather">Sunny</div>
+          <div class="hi-low">13°f / 17°f </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
+ 
