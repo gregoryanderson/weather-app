@@ -7,7 +7,7 @@
 
 body {
   font-family: 'monserrat', sans-serif;
-  background-image: url('bg.jpg');
+  background-image: url('../images/bg.jpg');
   background-size: cover;
   background-position: top center;
   transition: 0.4 ease-out;
@@ -22,11 +22,11 @@ body {
 }
 
 .warm {
-  background-image: url('bg-warm.jpg');
+  background-image: url('../images/bg-warm.jpg');
 }
 
 .cold {
-  background-image: url('bg-cold.png');
+  background-image: url('../images/bg-cold.png');
 }
 
 header {
