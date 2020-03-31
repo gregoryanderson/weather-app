@@ -43,13 +43,13 @@ function displayResults(weather){
   date.innerText = dateBuilder(now)
 
   let temp = document.querySelector('.current .temp')
-  temp.innerHTML = `${Math.round(weather.main.temp)}<span>˚f</span>`
+  temp.innerHTML = `${Math.round(weather.main.temp)}<span>&deg; f</span>`
 
   let condition = document.querySelector('.current .weather')
   condition.innerText = weather.weather[0].main;
 
   let hilow = document.querySelector('.hi-low')
-  hilow.innerText = `${Math.round(weather.main.temp_min)}˚f / ${Math.round(weather.main.temp_max)}˚f`
+  hilow.innerText = `${Math.round(weather.main.temp_min)}&deg; f / ${Math.round(weather.main.temp_max)}&deg; f`
 
   if (weather.main.temp > 70){
     document.querySelector('body').classList.add('warm')
